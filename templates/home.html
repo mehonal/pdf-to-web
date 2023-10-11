@@ -6,16 +6,25 @@
         <title>PDF to Web</title>
         <style type="text/css" media="screen">
             .filename-input{
-                // to be added later...
+                border-radius: 7px;
+                background-color: lightgray;
+                color: black;
+                border-width: 0px;
+                padding: 10px 15px;
+                margin: 5px;
             }
             
             .filename-submit{
-                border-radius: 0px;
+                border-radius: 7px;
                 background-color: gray;
                 color: white;
-                padding: 20px;
-                margin: 10px;
+                border-width: 0px;
+                padding: 10px 15px;
+                margin: 5px;
+            }
 
+            .filename-submit:hover{
+                cursor: pointer;
             }
         </style>
     </head>
@@ -23,8 +32,8 @@
         <h1>Enter Filename</h1>
         <p>Ensure that the file is inside the pdfs folder in the program's root directory.</p>
         <form method="get" accept-charset="utf-8">
-            <input type="text" name="filename" placeholder="Enter filename here...">
-            <input type="submit" value="Send PDF">
+            <input type="text" class="filename-input" name="filename" placeholder="Enter filename here...">
+            <input type="submit" class="filename-submit" value="Send PDF">
         </form>
     </body>
 </html>
