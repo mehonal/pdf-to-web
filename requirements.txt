@@ -1,0 +1,5 @@
+flask
+flask-sqlalchemy
+pytesseract
+pdf2image
+pillow
